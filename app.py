@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all for development
 
 # SQLite database (Render persistent disk)
-DB_FILE = os.environ.get('DB_FILE', '/app/arl_data.db')
+DB_FILE = os.environ.get('DB_FILE', 'arl_data.db')
 
 PRODUCT_MAP = {
     1: {"name": "Mechanical Gaming Keyboard", "price": 129.99, "category": "Keyboards", "emoji": "⌨️"},
