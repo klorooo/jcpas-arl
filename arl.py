@@ -1,3 +1,5 @@
+# arl.py - ADD the missing import at the top
+import os  # <-- Add this line
 from flask import Flask, jsonify
 app = Flask(__name__)
 
